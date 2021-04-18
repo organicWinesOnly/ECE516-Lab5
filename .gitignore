@@ -1,0 +1,9 @@
+# Python files
+__pycache__/
+
+# Vim backup and swaps
+*.swo
+*.swp
+.swp/
+.backup/
+*~
