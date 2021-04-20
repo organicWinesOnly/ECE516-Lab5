@@ -14,6 +14,7 @@ import sys
 DURATION = float(sys.argv[1])
 FRAME_RATE = 60
 NUM_FRAME = 1024 * 4
+GAIN = 5
 fs = 40000
 
 # =============================================================================
@@ -38,7 +39,7 @@ def lockIn(ref, recorded):
     # Multiply signals
     prod = ref * recorded
     # filter result and return
-    return lowpass_filter(prod, fs, limit=40) * 5
+    return lowpass_filter(prod, fs, limit=40) * GAIN
 
 # =============================================================================
 # Set up microphone stream 
