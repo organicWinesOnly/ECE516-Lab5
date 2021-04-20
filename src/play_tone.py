@@ -10,6 +10,13 @@ def msin(freq, fs, samples):
     times = np.arange(samples) * freq / fs
     return np.sin(2 * np.pi * times)
 
+def mcos(freq, fs, samples):
+    """ Generate a cosine wave with <freq> Hz sampled at <fs> Hz of length 
+        <samples>.
+    """
+    times = np.arange(samples) * freq / fs
+    return np.cos(2 * np.pi * times)
+
 
 def playTone(volume, freq, fs, samples):
     """ Play a tone of a with <freq> Hz sampled at <fs> Hz of length <samples>.
