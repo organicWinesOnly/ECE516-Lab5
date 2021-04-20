@@ -1,5 +1,8 @@
-""" This file contains the code to develop the ECG animation for the video
-    overlay.
+""" Soft implementation of a lock-in amplifier and Sequential Wave Imprinting
+    Machine (SWIM).
+
+    This version displays a moving dot that only tranverses the y direction
+    and is suitible for wave  mapping using long exposure photographs.
 """
 from play_tone import msin
 from capture import capture

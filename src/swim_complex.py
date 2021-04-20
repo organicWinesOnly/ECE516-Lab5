@@ -1,5 +1,8 @@
 """ Soft implementation of a complex lock in amplifier and a Sequential Wave
     imprinting Machine (SWIM)  
+
+    This version displays a moving wave as a SWIM and is not suitible for wave
+    mapping using long exposure photographs. 
 """
 from play_tone import msin, mcos
 from capture import capture

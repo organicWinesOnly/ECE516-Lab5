@@ -1,5 +1,7 @@
 """ This file contains a function to capture audio from the connected
     microphone.
+
+    Not used in this lab.
 """
 
 import pyaudio

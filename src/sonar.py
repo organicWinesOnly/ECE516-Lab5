@@ -1,5 +1,5 @@
 """ Soft implementation of a lock in amplifier and a Sequential Wave
-    imprinting Machine (SWIM).
+    imprinting Machine (SWIM) for sonar.
 
     The program outputs a plot of the first band from the time
     frequency diagram of the picked up sound. 

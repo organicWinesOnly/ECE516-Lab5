@@ -5,15 +5,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 from math import inf
 
-# data = np.loadtxt("../data/.csv", delimiter=",")
-                  #skiprows=start, max_rows=12000)
 
 # =============================================================================
 # Build butterworth filer (bandpass)
 # second order butterworth lowpass filter with 40 Hz cutoff
 # =============================================================================
-#fs = 268  # sampling rate in Hz
-
 def lowpass_filter(signal, fs, limit=40,
                    passband_ripple=3.0, stopband_att=60.0):
     """ Filter signal using a low pass Butterworth filter. <fs> sampling rate of
