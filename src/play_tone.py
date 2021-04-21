@@ -8,7 +8,7 @@ def msin(freq, fs, samples):
     """ Generate a sine wave with <freq> Hz sampled at <fs> Hz of length <samples>.
     """
     times = np.arange(samples) * freq / fs
-    return np.sin(2 * np.pi * times)
+    return np.sin(2 * np.pi * times).astype(np.float32)
 
 
 def playTone(volume, freq, fs, samples):
