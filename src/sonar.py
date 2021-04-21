@@ -17,10 +17,10 @@ import matplotlib.animation as amt
 import sys
 
 # Constants
-DURATION = float(sys.argv[1])
+DURATION = 100
 FRAME_RATE = 60
 NUM_FRAME = 1024 * 4
-GAIN = 5
+GAIN = float(sys.argv[1])
 fs = 40000
 # Quadratic chirplet transform parameters
 WIN_SIZE=256

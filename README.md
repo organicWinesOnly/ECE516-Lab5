@@ -19,7 +19,7 @@ The goal of the lab was to build a soft implementation of a lock in amplifier
 4. 'src/sonar.py'
 
 All perform these tasks differently. In order to run any of these programs, in
-the command line run 'python3 <file> <duration of output signal in s>' to
+the command line run 'python3 \<file\> \<gain\>' to
 generate a life graphic. 
 
 ### swim.py
