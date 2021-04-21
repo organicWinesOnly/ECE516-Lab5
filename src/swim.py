@@ -14,11 +14,12 @@ import matplotlib.animation as amt
 import sys
 
 # Constants
-DURATION = float(sys.argv[1])
+DURATION = 100
 FRAME_RATE = 60
 NUM_FRAME = 1024 * 4
 GAIN = 5
 fs = 40000
+GAIN = float(sys.argv[1])
 
 # =============================================================================
 # Set up plotting environment

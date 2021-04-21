@@ -14,10 +14,10 @@ import matplotlib.animation as amt
 import sys
 
 # Constants
-DURATION = float(sys.argv[1])
-FRAME_RATE = 24
-NUM_FRAME = 512 # 1024
-GAIN = 25
+DURATION = 100
+FRAME_RATE = 60
+NUM_FRAME = 1024 * 4
+GAIN = float(sys.argv[1])
 fs = 40000
 
 # =============================================================================
@@ -33,7 +33,7 @@ fig, ax = plt.subplots(figsize=(16,8),
                        facecolor=(0,0,0)) 
 
 ax.set_facecolor((0,0,0))
-ax.set_xlim(0, NUM_FRAME) 
+ax.set_ylim(-1, 1) 
 ax.set_position([0, 0,  1, 1])
 
 # =============================================================================
